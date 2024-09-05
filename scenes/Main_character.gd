@@ -36,6 +36,9 @@ func _physics_process(delta):
 
 	move_and_slide()
 	
-	var isleft = velocity.x < 0
+	var isleft = Input.is_action_just_pressed("left")
 	sprite_2d.flip_h = isleft
+	
+	if Input.is_action_just_pressed("left"):
+		sprite_2d.flip_h = isleft
 	
