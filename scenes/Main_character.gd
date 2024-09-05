@@ -38,3 +38,4 @@ func _physics_process(delta):
 	
 	var isleft = velocity.x < 0
 	sprite_2d.flip_h = isleft
+	
