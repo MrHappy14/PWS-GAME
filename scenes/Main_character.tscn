@@ -203,3 +203,4 @@ frame_progress = 0.943533
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(432, 367)
 shape = SubResource("RectangleShape2D_7swib")
+debug_color = Color(6.73831e-07, 0.600105, 0.699397, 0.42)
