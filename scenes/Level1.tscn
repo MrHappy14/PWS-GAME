@@ -369,4 +369,4 @@ position_smoothing_enabled = true
 position_smoothing_speed = 7.0
 
 [node name="portal" parent="." instance=ExtResource("4_1xdnn")]
-position = Vector2(2271, 318)
+position = Vector2(2326, 371)

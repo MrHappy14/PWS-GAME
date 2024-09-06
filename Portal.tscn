@@ -53,19 +53,19 @@ animations = [{
 }]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_c4e5d"]
-height = 50.0
+height = 52.0
 
 [node name="Area2D" type="Area2D"]
 position = Vector2(1, 0)
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 texture_filter = 1
-position = Vector2(44, 48.5)
+position = Vector2(-2, 0.5)
 scale = Vector2(1.6875, 1.71875)
 sprite_frames = SubResource("SpriteFrames_n5doi")
 autoplay = "default"
-frame_progress = 0.381338
+frame_progress = 0.613971
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(46, 49)
+position = Vector2(5.72205e-06, 7.62939e-06)
 shape = SubResource("CapsuleShape2D_c4e5d")
