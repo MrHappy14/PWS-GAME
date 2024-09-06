@@ -1,7 +1,7 @@
-[gd_scene load_steps=4 format=3 uid="uid://of5p6upo4dg0"]
+[gd_scene load_steps=4 format=3 uid="uid://cyje2vht8873b"]
 
 [ext_resource type="Script" path="res://scenes/main_menu.gd" id="1_rorq5"]
-[ext_resource type="Texture2D" uid="uid://cy3hbgx78lehr" path="res://scenes/achtergrond main menu.jpg" id="1_vgr0h"]
+[ext_resource type="Texture2D" uid="uid://bbcvngveio2kg" path="res://Textures & backgrounds/blue-preview.png" id="2_5o0dw"]
 [ext_resource type="Texture2D" uid="uid://m6o0ylsrntcs" path="res://scenes/Logo.png" id="2_o7vyu"]
 
 [node name="MainMenu" type="Node"]
@@ -14,14 +14,14 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -512.0
-offset_top = -384.0
-offset_right = 512.0
-offset_bottom = 384.0
+offset_left = -574.0
+offset_top = -324.0
+offset_right = 576.0
+offset_bottom = 324.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("1_vgr0h")
-stretch_mode = 1
+texture = ExtResource("2_5o0dw")
+expand_mode = 1
 
 [node name="TextureRect" type="TextureRect" parent="."]
 anchors_preset = 5
