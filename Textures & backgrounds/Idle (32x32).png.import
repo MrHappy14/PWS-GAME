@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://m6o0ylsrntcs"
-path="res://.godot/imported/Logo.png-f9d3ae71dba4c65fab06fff8e80231d9.ctex"
+uid="uid://bdbnkbbbg0shw"
+path="res://.godot/imported/Idle (32x32).png-1a0329e74c0f5aa3dd64ad5a079897b6.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://scenes/Logo.png"
-dest_files=["res://.godot/imported/Logo.png-f9d3ae71dba4c65fab06fff8e80231d9.ctex"]
+source_file="res://Textures & backgrounds/Idle (32x32).png"
+dest_files=["res://.godot/imported/Idle (32x32).png-1a0329e74c0f5aa3dd64ad5a079897b6.ctex"]
 
 [params]
 

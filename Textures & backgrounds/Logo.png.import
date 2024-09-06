@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cy3hbgx78lehr"
-path="res://.godot/imported/achtergrond main menu.jpg-70752b01c06b35a3154f325e6acabfed.ctex"
+uid="uid://m6o0ylsrntcs"
+path="res://.godot/imported/Logo.png-213f43fbee6f6b437158dbc04418f4e7.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://scenes/achtergrond main menu.jpg"
-dest_files=["res://.godot/imported/achtergrond main menu.jpg-70752b01c06b35a3154f325e6acabfed.ctex"]
+source_file="res://Textures & backgrounds/Logo.png"
+dest_files=["res://.godot/imported/Logo.png-213f43fbee6f6b437158dbc04418f4e7.ctex"]
 
 [params]
 

@@ -2,8 +2,8 @@
 
 [ext_resource type="Script" path="res://scenes/Main_character.gd" id="1_gq1o5"]
 [ext_resource type="Texture2D" uid="uid://mos3sq4kkqcv" path="res://Textures & backgrounds/Jump (32x32).png" id="1_phr43"]
-[ext_resource type="Texture2D" uid="uid://bdbnkbbbg0shw" path="res://scenes/Idle (32x32).png" id="2_33g71"]
-[ext_resource type="Texture2D" uid="uid://ce5yxq7x3vtp1" path="res://scenes/Run (32x32).png" id="4_hlwvn"]
+[ext_resource type="Texture2D" uid="uid://bdbnkbbbg0shw" path="res://Textures & backgrounds/Idle (32x32).png" id="2_33g71"]
+[ext_resource type="Texture2D" uid="uid://ce5yxq7x3vtp1" path="res://Textures & backgrounds/Run (32x32).png" id="4_hlwvn"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_o43of"]
 atlas = ExtResource("2_33g71")

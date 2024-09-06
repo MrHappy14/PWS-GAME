@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ce5yxq7x3vtp1"
-path="res://.godot/imported/Run (32x32).png-9363a332d6b841e1ed860efb2d8b5ac5.ctex"
+uid="uid://cy3hbgx78lehr"
+path="res://.godot/imported/achtergrond main menu.jpg-dea13075afda4e5c947cad7b8d3f2299.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://scenes/Run (32x32).png"
-dest_files=["res://.godot/imported/Run (32x32).png-9363a332d6b841e1ed860efb2d8b5ac5.ctex"]
+source_file="res://Textures & backgrounds/achtergrond main menu.jpg"
+dest_files=["res://.godot/imported/achtergrond main menu.jpg-dea13075afda4e5c947cad7b8d3f2299.ctex"]
 
 [params]
 
