@@ -1,7 +1,7 @@
-[gd_scene load_steps=6 format=3 uid="uid://on8gfv6a0v0g"]
+[gd_scene load_steps=6 format=3 uid="uid://dq0tlvedld46e"]
 
-[ext_resource type="Texture2D" uid="uid://w5tb4xqlgb2a" path="res://space.png" id="1_1yvyi"]
-[ext_resource type="Texture2D" uid="uid://dnt6tp08375gk" path="res://Terrain (16x16).png" id="2_se4cr"]
+[ext_resource type="Texture2D" uid="uid://w5tb4xqlgb2a" path="res://Textures & backgrounds/space.png" id="1_1yvyi"]
+[ext_resource type="Texture2D" uid="uid://dnt6tp08375gk" path="res://Textures & backgrounds/Terrain (16x16).png" id="2_se4cr"]
 [ext_resource type="PackedScene" uid="uid://c70rbx7ublb3i" path="res://scenes/Main_character.tscn" id="3_b4e15"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_h6tes"]
@@ -343,9 +343,10 @@ sources/0 = SubResource("TileSetAtlasSource_h6tes")
 
 [node name="TextureRect" type="TextureRect" parent="."]
 texture_filter = 1
-offset_left = -276.0
-offset_right = 2183.0
-offset_bottom = 1000.0
+offset_left = -1684.0
+offset_top = -865.0
+offset_right = 3396.0
+offset_bottom = 2190.0
 texture = ExtResource("1_1yvyi")
 stretch_mode = 1
 

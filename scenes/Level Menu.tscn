@@ -1,8 +1,8 @@
-[gd_scene load_steps=4 format=3 uid="uid://ca4mj6tg062ss"]
+[gd_scene load_steps=4 format=3 uid="uid://53qbwpbola00"]
 
-[ext_resource type="Texture2D" uid="uid://cy3hbgx78lehr" path="res://scenes/achtergrond main menu.jpg" id="1_s8hut"]
 [ext_resource type="Script" path="res://scenes/level_menu.gd" id="1_xk1r0"]
 [ext_resource type="Texture2D" uid="uid://m6o0ylsrntcs" path="res://scenes/Logo.png" id="2_cdbl6"]
+[ext_resource type="Texture2D" uid="uid://bbcvngveio2kg" path="res://Textures & backgrounds/blue-preview.png" id="2_iekut"]
 
 [node name="LevelMenu" type="Node"]
 script = ExtResource("1_xk1r0")
@@ -13,13 +13,13 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -512.0
-offset_top = -384.0
-offset_right = 512.0
-offset_bottom = 384.0
+offset_left = -574.0
+offset_top = -320.0
+offset_right = 576.0
+offset_bottom = 324.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("1_s8hut")
+texture = ExtResource("2_iekut")
 
 [node name="level 2" type="Button" parent="."]
 anchors_preset = 8

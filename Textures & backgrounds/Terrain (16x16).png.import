@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://nnln36vk6gpc"
-path="res://.godot/imported/nebula x 3.png-8b42eea2b105c204728f365b46ee2dd8.ctex"
+uid="uid://dnt6tp08375gk"
+path="res://.godot/imported/Terrain (16x16).png-4219566c3938929e098451955f17fd82.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://nebula x 3.png"
-dest_files=["res://.godot/imported/nebula x 3.png-8b42eea2b105c204728f365b46ee2dd8.ctex"]
+source_file="res://Textures & backgrounds/Terrain (16x16).png"
+dest_files=["res://.godot/imported/Terrain (16x16).png-4219566c3938929e098451955f17fd82.ctex"]
 
 [params]
 
