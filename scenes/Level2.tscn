@@ -1,8 +1,8 @@
-[gd_scene load_steps=6 format=3 uid="uid://dq0tlvedld46e"]
+[gd_scene load_steps=6 format=3 uid="uid://on8gfv6a0v0g"]
 
 [ext_resource type="Texture2D" uid="uid://w5tb4xqlgb2a" path="res://Textures & backgrounds/space.png" id="1_1yvyi"]
 [ext_resource type="Texture2D" uid="uid://dnt6tp08375gk" path="res://Textures & backgrounds/Terrain (16x16).png" id="2_se4cr"]
-[ext_resource type="PackedScene" uid="uid://c70rbx7ublb3i" path="res://scenes/Main_character.tscn" id="3_b4e15"]
+[ext_resource type="PackedScene" uid="uid://c70rbx7ublb3i" path="res://Main_character.tscn" id="3_b4e15"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_h6tes"]
 texture = ExtResource("2_se4cr")
@@ -339,7 +339,7 @@ texture = ExtResource("2_se4cr")
 physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_h6tes")
 
-[node name="Level 1" type="Node"]
+[node name="Level 2" type="Node"]
 
 [node name="TextureRect" type="TextureRect" parent="."]
 texture_filter = 1
@@ -361,5 +361,7 @@ layer_0/tile_data = PackedInt32Array(1572890, 1376256, 0, 1638426, 1376256, 1, 1
 
 [node name="Camera2D" type="Camera2D" parent="CharacterBody2D"]
 position = Vector2(432, 367)
+limit_left = 0
+limit_bottom = 1000
 position_smoothing_enabled = true
 position_smoothing_speed = 7.0
