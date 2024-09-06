@@ -1,3 +1,4 @@
 # Godot 4+ specific ignores
 .godot/
 scenes/gimp-2.10.38-setup.exe
+scenes/Level1.tscn
