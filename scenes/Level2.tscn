@@ -341,7 +341,7 @@ sources/0 = SubResource("TileSetAtlasSource_d8xu6")
 
 [node name="Level 2" type="Node"]
 
-[node name="TextureRect" type="TextureRect" parent="."]
+[node name="Texturerect" type="TextureRect" parent="."]
 texture_filter = 1
 offset_left = -1684.0
 offset_top = -865.0
