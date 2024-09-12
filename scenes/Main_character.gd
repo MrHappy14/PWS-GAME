@@ -6,16 +6,18 @@ const JUMP_VELOCITY = -160.0
 
 var gravity: int = ProjectSettings.get("physics/2d/default_gravity")  # Default gravity
 
-# Method to set gravity
-func set_gravity(gravity_value: int):
-	gravity = gravity_value
-	print("Gravity set to: ", gravity)
-
-func _ready():
-	# Make sure to call set_gravity when level is loaded
-	set_gravity(gravity)
-
 func _physics_process(delta):
+	var root_name = get_tree().root.get_child(0).name
+	var current_level = 1
+	
+	if root_name == "Level1":
+		current_level == 1
+	elif root_name == "Level2":
+		current_level = 2
+	
+	if (current_level == 2):
+		gravity = 75
+
 	# Handle animations
 	if (velocity.x > 1 or velocity.x < -1):
 		sprite_2d.animation = "running"

@@ -1,29 +1,21 @@
-[gd_scene load_steps=10 format=3 uid="uid://di6acce08g0e3"]
-
-[ext_resource type="Texture2D" path="res://Textures & backgrounds/Dimensional_Portal.png" id="1_xrb3w"]
+[gd_scene load_steps=9 format=3 uid="uid://di6acce08g0e3"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ad5a6"]
-atlas = ExtResource("1_xrb3w")
 region = Rect2(0, 0, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_b0g5a"]
-atlas = ExtResource("1_xrb3w")
 region = Rect2(32, 0, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_otfty"]
-atlas = ExtResource("1_xrb3w")
 region = Rect2(64, 0, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_lfy68"]
-atlas = ExtResource("1_xrb3w")
 region = Rect2(0, 32, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_vafvy"]
-atlas = ExtResource("1_xrb3w")
 region = Rect2(32, 32, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_2i8a2"]
-atlas = ExtResource("1_xrb3w")
 region = Rect2(64, 32, 32, 32)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_n5doi"]
