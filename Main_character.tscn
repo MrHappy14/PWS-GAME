@@ -188,7 +188,7 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_7swib"]
-size = Vector2(22, 24)
+size = Vector2(23, 26)
 
 [node name="CharacterBody2D" type="CharacterBody2D"]
 script = ExtResource("1_gq1o5")
@@ -201,6 +201,6 @@ autoplay = "default"
 frame_progress = 0.943533
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(432, 369)
+position = Vector2(432.5, 368)
 shape = SubResource("RectangleShape2D_7swib")
 debug_color = Color(6.73831e-07, 0.600105, 0.699397, 0.42)
