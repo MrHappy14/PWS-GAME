@@ -1,10 +1,9 @@
-[gd_scene load_steps=8 format=3 uid="uid://jfn1luj0ks55"]
+[gd_scene load_steps=7 format=3 uid="uid://jfn1luj0ks55"]
 
 [ext_resource type="Texture2D" uid="uid://w5tb4xqlgb2a" path="res://Textures & backgrounds/space.png" id="1_xfgt7"]
 [ext_resource type="Texture2D" uid="uid://dnt6tp08375gk" path="res://Textures & backgrounds/Terrain (16x16).png" id="2_vuvbi"]
 [ext_resource type="PackedScene" path="res://scenes/Main_character.tscn" id="3_ott7j"]
 [ext_resource type="Texture2D" uid="uid://dsxgic065424l" path="res://Textures & backgrounds/pixel orb maan.jpg" id="4_7jrbw"]
-[ext_resource type="PackedScene" uid="uid://d1gclqyfd800b" path="res://finish.tscn" id="5_278hj"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_h6tes"]
 texture = ExtResource("2_vuvbi")
@@ -375,5 +374,3 @@ position_smoothing_speed = 7.0
 position = Vector2(1000.83, 327.135)
 scale = Vector2(0.0436328, 0.0392829)
 texture = ExtResource("4_7jrbw")
-
-[node name="finish" parent="." instance=ExtResource("5_278hj")]
