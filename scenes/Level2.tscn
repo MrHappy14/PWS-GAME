@@ -339,7 +339,7 @@ texture = ExtResource("2_se4cr")
 physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_h6tes")
 
-[node name="Level 1" type="Node"]
+[node name="Level 2" type="Node"]
 
 [node name="TextureRect" type="TextureRect" parent="."]
 texture_filter = 1
@@ -355,13 +355,6 @@ texture_filter = 1
 position = Vector2(1, 0)
 tile_set = SubResource("TileSet_0h5lk")
 format = 2
-layer_0/tile_data = PackedInt32Array(1572890, 1376256, 0, 1638426, 1376256, 1, 1572891, 1441792, 0, 1638427, 1441792, 1, 1572897, 1376256, 0, 1638433, 1376256, 1, 1572898, 1441792, 0, 1638434, 1441792, 1, 1703975, 1376256, 0, 1769511, 1376256, 1, 1703976, 1441792, 0, 1769512, 1441792, 1, 1441836, 1376256, 0, 1507372, 1376256, 1, 1441837, 1441792, 0, 1507373, 1441792, 1, 1703985, 1376256, 0, 1769521, 1376256, 1, 1703986, 1441792, 0, 1769522, 1441792, 1)
+layer_0/tile_data = PackedInt32Array(1572890, 1376256, 0, 1638426, 1376256, 1, 1572891, 1441792, 0, 1638427, 1441792, 1, 1703985, 1376256, 0, 1769521, 1376256, 1, 1703986, 1441792, 0, 1769522, 1441792, 1, 1572934, 1376256, 0, 1638470, 1376256, 1, 1572935, 1441792, 0, 1638471, 1441792, 1, 1769559, 1376256, 0, 1835095, 1376256, 1, 1769560, 1441792, 0, 1835096, 1441792, 1)
 
 [node name="CharacterBody2D" parent="." instance=ExtResource("3_b4e15")]
-
-[node name="Camera2D" type="Camera2D" parent="CharacterBody2D"]
-position = Vector2(432, 367)
-limit_left = 0
-limit_bottom = 1000
-position_smoothing_enabled = true
-position_smoothing_speed = 7.0

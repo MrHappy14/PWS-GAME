@@ -1,9 +1,18 @@
-[gd_scene load_steps=7 format=3 uid="uid://jfn1luj0ks55"]
+[gd_scene load_steps=8 format=3 uid="uid://jfn1luj0ks55"]
 
 [ext_resource type="Texture2D" uid="uid://w5tb4xqlgb2a" path="res://Textures & backgrounds/space.png" id="1_xfgt7"]
 [ext_resource type="Texture2D" uid="uid://dnt6tp08375gk" path="res://Textures & backgrounds/Terrain (16x16).png" id="2_vuvbi"]
 [ext_resource type="PackedScene" uid="uid://c70rbx7ublb3i" path="res://scenes/Main_character.tscn" id="3_ott7j"]
 [ext_resource type="PackedScene" uid="uid://di6acce08g0e3" path="res://scenes/Portal.tscn" id="4_1xdnn"]
+
+[sub_resource type="GDScript" id="GDScript_u5bqs"]
+script/source = "extends Node
+
+func _ready():
+	var player = get_node(\"Player\")  # Assuming \"Player\" is the name of your player node
+	if player:
+		player.set_gravity(162)  # Gravity specific to Level 1
+"
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_h6tes"]
 texture = ExtResource("2_vuvbi")
@@ -341,6 +350,7 @@ physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_h6tes")
 
 [node name="Level 1" type="Node"]
+script = SubResource("GDScript_u5bqs")
 
 [node name="TextureRect" type="TextureRect" parent="."]
 texture_filter = 1
@@ -361,10 +371,10 @@ layer_0/tile_data = PackedInt32Array(2359296, 1507328, 5, 2424832, 1507328, 5, 2
 [node name="portal" parent="." instance=ExtResource("4_1xdnn")]
 position = Vector2(2326, 371)
 
-[node name="CharacterBody2D" parent="." instance=ExtResource("3_ott7j")]
+[node name="Player" parent="." instance=ExtResource("3_ott7j")]
 position = Vector2(383, 17)
 
-[node name="Camera2D" type="Camera2D" parent="CharacterBody2D"]
+[node name="Camera2D" type="Camera2D" parent="Player"]
 position = Vector2(432, 367)
 limit_left = -100
 limit_bottom = 1055
