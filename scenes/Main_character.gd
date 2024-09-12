@@ -6,18 +6,17 @@ const JUMP_VELOCITY = -160.0
 
 var gravity: int = ProjectSettings.get("physics/2d/default_gravity")  # Default gravity
 
-func _physics_process(delta):
-	var root_name = get_tree().root.get_child(0).name
-	var current_level = 1
+func _ready():
+	# Access the root node of the current scene
+	var current_scene = get_tree().root.get_child(0)
 	
-	if root_name == "Level1":
-		current_level == 1
-	elif root_name == "Level2":
-		current_level = 2
-	
-	if (current_level == 2):
+	# Check the scene name or set the gravity based on the scene
+	if current_scene.name == "Level 1":
+		gravity = 162
+	elif current_scene.name == "Level 2":
 		gravity = 75
 
+func _physics_process(delta):
 	# Handle animations
 	if (velocity.x > 1 or velocity.x < -1):
 		sprite_2d.animation = "running"
