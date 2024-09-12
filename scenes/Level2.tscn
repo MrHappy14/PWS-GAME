@@ -2,7 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://w5tb4xqlgb2a" path="res://Textures & backgrounds/space.png" id="1_1yvyi"]
 [ext_resource type="Texture2D" uid="uid://dnt6tp08375gk" path="res://Textures & backgrounds/Terrain (16x16).png" id="2_se4cr"]
-[ext_resource type="PackedScene" uid="uid://c70rbx7ublb3i" path="res://scenes/Main_character.tscn" id="3_b4e15"]
+[ext_resource type="PackedScene" uid="uid://ugj8c7wbawvl" path="res://scenes/Main_character.tscn" id="3_b4e15"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_d8xu6"]
 texture = ExtResource("2_se4cr")
@@ -344,8 +344,8 @@ sources/0 = SubResource("TileSetAtlasSource_d8xu6")
 [node name="Texturerect" type="TextureRect" parent="."]
 texture_filter = 1
 offset_left = -1684.0
-offset_top = -865.0
-offset_right = 3396.0
+offset_top = -1015.0
+offset_right = 4686.0
 offset_bottom = 2190.0
 texture = ExtResource("1_1yvyi")
 stretch_mode = 1
@@ -355,12 +355,11 @@ texture_filter = 1
 position = Vector2(1, 0)
 tile_set = SubResource("TileSet_0h5lk")
 format = 2
-layer_0/tile_data = PackedInt32Array(1835136, 1376256, 0, 1900672, 1376256, 1, 1835137, 1441792, 0, 1900673, 1441792, 1)
 
 [node name="Layer1" type="TileMapLayer" parent="TileMap"]
 texture_filter = 1
 use_parent_material = true
-tile_map_data = PackedByteArray("AAAxABoAAAAVAAAAAAAxABsAAAAVAAEAAAAyABoAAAAWAAAAAAAyABsAAAAWAAEAAABGABgAAAAVAAAAAABGABkAAAAVAAEAAABHABgAAAAWAAAAAABHABkAAAAWAAEAAABXABsAAAAVAAAAAABXABwAAAAVAAEAAABYABsAAAAWAAAAAABYABwAAAAWAAEAAAAaABgAAAAWAAQAAAAaABkAAAAWAAUAAAAaABoAAAAWAAYAAAAbABgAAAAXAAQAAAAbABkAAAAXAAUAAAAbABoAAAAXAAYAAAAcABgAAAAYAAQAAAAcABkAAAAYAAUAAAAcABoAAAAYAAYAAAA=")
+tile_map_data = PackedByteArray("AAAxABoAAAAVAAAAAAAxABsAAAAVAAEAAAAyABoAAAAWAAAAAAAyABsAAAAWAAEAAABGABgAAAAVAAAAAABGABkAAAAVAAEAAABHABgAAAAWAAAAAABHABkAAAAWAAEAAABXABsAAAAVAAAAAABXABwAAAAVAAEAAABYABsAAAAWAAAAAABYABwAAAAWAAEAAAAaABgAAAAWAAQAAAAaABkAAAAWAAUAAAAaABoAAAAWAAYAAAAbABgAAAAXAAQAAAAbABkAAAAXAAUAAAAbABoAAAAXAAYAAAAcABgAAAAYAAQAAAAcABkAAAAYAAUAAAAcABoAAAAYAAYAAACVACQAAAAVAAAAAACVACUAAAAVAAEAAACWACQAAAAWAAAAAACWACUAAAAWAAEAAAA=")
 tile_set = SubResource("TileSet_0h5lk")
 
 [node name="CharacterBody2D" parent="." instance=ExtResource("3_b4e15")]

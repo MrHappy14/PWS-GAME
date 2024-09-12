@@ -1,4 +1,4 @@
-[gd_scene load_steps=30 format=3 uid="uid://c70rbx7ublb3i"]
+[gd_scene load_steps=30 format=3 uid="uid://ugj8c7wbawvl"]
 
 [ext_resource type="Script" path="res://scenes/Main_character.gd" id="1_gq1o5"]
 [ext_resource type="Texture2D" uid="uid://mos3sq4kkqcv" path="res://Textures & backgrounds/Jump (32x32).png" id="1_phr43"]
@@ -188,7 +188,7 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_7swib"]
-size = Vector2(22, 24)
+size = Vector2(23, 26)
 
 [node name="CharacterBody2D" type="CharacterBody2D"]
 script = ExtResource("1_gq1o5")
@@ -201,6 +201,6 @@ autoplay = "default"
 frame_progress = 0.943533
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(432, 369)
+position = Vector2(433, 369)
 shape = SubResource("RectangleShape2D_7swib")
 debug_color = Color(6.73831e-07, 0.600105, 0.699397, 0.42)

@@ -1,43 +1,52 @@
-[gd_scene load_steps=9 format=3 uid="uid://di6acce08g0e3"]
+[gd_scene load_steps=10 format=3 uid="uid://di6acce08g0e3"]
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_ad5a6"]
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_5qn6c"]
+load_path = "res://.godot/imported/Dimensional_Portal.png-177115e22831e43da1b4842e2a28601e.ctex"
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hvynx"]
+atlas = SubResource("CompressedTexture2D_5qn6c")
 region = Rect2(0, 0, 32, 32)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_b0g5a"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_faddx"]
+atlas = SubResource("CompressedTexture2D_5qn6c")
 region = Rect2(32, 0, 32, 32)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_otfty"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_tkk6c"]
+atlas = SubResource("CompressedTexture2D_5qn6c")
 region = Rect2(64, 0, 32, 32)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_lfy68"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_cbxdr"]
+atlas = SubResource("CompressedTexture2D_5qn6c")
 region = Rect2(0, 32, 32, 32)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_vafvy"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_i4xrj"]
+atlas = SubResource("CompressedTexture2D_5qn6c")
 region = Rect2(32, 32, 32, 32)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_2i8a2"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_xvnjb"]
+atlas = SubResource("CompressedTexture2D_5qn6c")
 region = Rect2(64, 32, 32, 32)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_n5doi"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_ad5a6")
+"texture": SubResource("AtlasTexture_hvynx")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_b0g5a")
+"texture": SubResource("AtlasTexture_faddx")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_otfty")
+"texture": SubResource("AtlasTexture_tkk6c")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_lfy68")
+"texture": SubResource("AtlasTexture_cbxdr")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_vafvy")
+"texture": SubResource("AtlasTexture_i4xrj")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_2i8a2")
+"texture": SubResource("AtlasTexture_xvnjb")
 }],
 "loop": true,
 "name": &"default",
@@ -56,7 +65,7 @@ position = Vector2(-2, 0.5)
 scale = Vector2(1.6875, 1.71875)
 sprite_frames = SubResource("SpriteFrames_n5doi")
 autoplay = "default"
-frame_progress = 0.822802
+frame_progress = 0.790688
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(5.72205e-06, 7.62939e-06)
