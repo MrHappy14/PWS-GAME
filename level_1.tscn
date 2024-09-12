@@ -387,3 +387,5 @@ script = ExtResource("5_gu88q")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
 position = Vector2(612, 537)
 shape = SubResource("RectangleShape2D_jfqjl")
+
+[node name="playerstart" type="Node" parent="."]
