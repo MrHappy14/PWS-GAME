@@ -1,4 +1,4 @@
-[gd_scene load_steps=6 format=4 uid="uid://dq0tlvedld46e"]
+[gd_scene load_steps=6 format=3 uid="uid://dq0tlvedld46e"]
 
 [ext_resource type="Texture2D" uid="uid://w5tb4xqlgb2a" path="res://Textures & backgrounds/space.png" id="1_1yvyi"]
 [ext_resource type="Texture2D" uid="uid://dnt6tp08375gk" path="res://Textures & backgrounds/Terrain (16x16).png" id="2_se4cr"]
@@ -355,17 +355,13 @@ texture_filter = 1
 position = Vector2(1, 0)
 tile_set = SubResource("TileSet_0h5lk")
 format = 2
-
-[node name="Layer1" type="TileMapLayer" parent="TileMap"]
-texture_filter = 1
-use_parent_material = true
-tile_map_data = PackedByteArray("AAAxABoAAAAVAAAAAAAxABsAAAAVAAEAAAAyABoAAAAWAAAAAAAyABsAAAAWAAEAAABGABgAAAAVAAAAAABGABkAAAAVAAEAAABHABgAAAAWAAAAAABHABkAAAAWAAEAAABXABsAAAAVAAAAAABXABwAAAAVAAEAAABYABsAAAAWAAAAAABYABwAAAAWAAEAAAAaABgAAAAWAAQAAAAaABkAAAAWAAUAAAAaABoAAAAWAAYAAAAbABgAAAAXAAQAAAAbABkAAAAXAAUAAAAbABoAAAAXAAYAAAAcABgAAAAYAAQAAAAcABkAAAAYAAUAAAAcABoAAAAYAAYAAACVACQAAAAVAAAAAACVACUAAAAVAAEAAACWACQAAAAWAAAAAACWACUAAAAWAAEAAAA=")
-tile_set = SubResource("TileSet_0h5lk")
+layer_0/tile_data = PackedInt32Array(1638452, 1376256, 0, 1703988, 1376256, 1, 1638453, 1441792, 0, 1703989, 1441792, 1, 1572936, 1376256, 0, 1638472, 1376256, 1, 1572937, 1441792, 0, 1638473, 1441792, 1, 1572954, 1376256, 0, 1638490, 1376256, 1, 1572955, 1441792, 0, 1638491, 1441792, 1, 1572973, 1376256, 0, 1638509, 1376256, 1, 1572974, 1441792, 0, 1638510, 1441792, 1, 1572988, 1376256, 0, 1638524, 1376256, 1, 1572989, 1441792, 0, 1638525, 1441792, 1, 1638543, 1376256, 0, 1704079, 1376256, 1, 1638544, 1441792, 0, 1704080, 1441792, 1, 2162843, 1376256, 0, 2228379, 1376256, 1, 2162844, 1441792, 0, 2228380, 1441792, 1, 2818219, 1376256, 0, 2883755, 1376256, 1, 2818220, 1441792, 0, 2883756, 1441792, 1, 2752701, 1376256, 0, 2818237, 1376256, 1, 2752702, 1441792, 0, 2818238, 1441792, 1, 2162888, 1376256, 0, 2228424, 1376256, 1, 2162889, 1441792, 0, 2228425, 1441792, 1, 1769680, 1376256, 0, 1835216, 1376256, 1, 1769681, 1441792, 0, 1835217, 1441792, 1, 1572892, 1376256, 0, 1638428, 1376256, 1, 1572893, 1441792, 0, 1638429, 1441792, 1)
 
 [node name="CharacterBody2D" parent="." instance=ExtResource("3_b4e15")]
+position = Vector2(36, 0)
 
 [node name="Camera2D" type="Camera2D" parent="CharacterBody2D"]
-position = Vector2(432, 367)
+position = Vector2(433, 369)
 limit_left = -100
 limit_bottom = 1055
 position_smoothing_enabled = true
