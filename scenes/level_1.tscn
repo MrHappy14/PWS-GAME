@@ -347,8 +347,8 @@ texture = ExtResource("3_2irm1")
 physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_pyvpk")
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_4o48a"]
-size = Vector2(1009, 20)
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_ty2en"]
+distance = -233.0
 
 [node name="Level 1" type="Node"]
 script = ExtResource("1_48hof")
@@ -487,10 +487,11 @@ expand_mode = 1
 stretch_mode = 4
 
 [node name="Deathzone" type="Area2D" parent="."]
-position = Vector2(5175, 405)
+position = Vector2(8, -12)
+script = ExtResource("11_t6sr1")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Deathzone"]
-position = Vector2(399, 28)
-shape = SubResource("RectangleShape2D_4o48a")
-script = ExtResource("11_t6sr1")
-target_level = null
+position = Vector2(5484, 420)
+shape = SubResource("WorldBoundaryShape2D_ty2en")
+
+[connection signal="body_entered" from="Deathzone" to="Deathzone" method="_on_body_entered"]
