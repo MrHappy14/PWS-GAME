@@ -1,8 +1,9 @@
-[gd_scene load_steps=6 format=3 uid="uid://dq0tlvedld46e"]
+[gd_scene load_steps=7 format=3 uid="uid://dq0tlvedld46e"]
 
 [ext_resource type="Texture2D" uid="uid://w5tb4xqlgb2a" path="res://Textures & backgrounds/space.png" id="1_1yvyi"]
 [ext_resource type="Texture2D" uid="uid://dnt6tp08375gk" path="res://Textures & backgrounds/Terrain (16x16).png" id="2_se4cr"]
 [ext_resource type="PackedScene" uid="uid://ugj8c7wbawvl" path="res://scenes/Main_character.tscn" id="3_b4e15"]
+[ext_resource type="Texture2D" uid="uid://b4gecuruxscod" path="res://Textures & backgrounds/heartPixels.png" id="4_v2kms"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_d8xu6"]
 texture = ExtResource("2_se4cr")
@@ -366,3 +367,73 @@ limit_left = -100
 limit_bottom = 1055
 position_smoothing_enabled = true
 position_smoothing_speed = 7.0
+
+[node name="UI" type="CanvasLayer" parent="."]
+
+[node name="Panel" type="Panel" parent="UI"]
+offset_right = 166.0
+offset_bottom = 62.0
+metadata/_edit_use_anchors_ = true
+
+[node name="PointsLabel" type="Label" parent="UI/Panel"]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 30
+text = "Points: 0"
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Hearts" type="Panel" parent="UI"]
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -132.0
+offset_bottom = 41.0
+grow_horizontal = 0
+metadata/_edit_use_anchors_ = true
+
+[node name="TextureRect" type="TextureRect" parent="UI/Hearts"]
+layout_mode = 1
+anchors_preset = 9
+anchor_bottom = 1.0
+offset_left = 2.0
+offset_right = 46.0
+grow_vertical = 2
+texture = ExtResource("4_v2kms")
+expand_mode = 1
+stretch_mode = 4
+metadata/_edit_use_anchors_ = true
+
+[node name="TextureRect2" type="TextureRect" parent="UI/Hearts"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 89.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("4_v2kms")
+expand_mode = 1
+stretch_mode = 4
+metadata/_edit_use_anchors_ = true
+
+[node name="TextureRect3" type="TextureRect" parent="UI/Hearts"]
+layout_mode = 1
+anchors_preset = 13
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -20.0
+offset_right = 21.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("4_v2kms")
+expand_mode = 1
+stretch_mode = 4
+metadata/_edit_use_anchors_ = true

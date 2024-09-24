@@ -1,4 +1,4 @@
-[gd_scene load_steps=22 format=3 uid="uid://c0nkesgl8eaff"]
+[gd_scene load_steps=22 format=3 uid="uid://c3ixnwg5q7rug"]
 
 [ext_resource type="Script" path="res://scenes/banaan_collectible.gd" id="1_h62bj"]
 [ext_resource type="Texture2D" uid="uid://dscwpfm6urr5q" path="res://Textures & backgrounds/Bananas.png" id="1_uyykc"]
