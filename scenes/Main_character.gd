@@ -16,6 +16,8 @@ func _ready():# Access the root node of the current scene
 		gravity = 162
 	elif current_scene.name == "Level 2":
 		gravity = 75
+	elif current_scene.name == "Level 3":
+		gravity = 371
 
 func _physics_process(delta):
 	#Animations
