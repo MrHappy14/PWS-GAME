@@ -1,9 +1,11 @@
-[gd_scene load_steps=7 format=3 uid="uid://dq0tlvedld46e"]
+[gd_scene load_steps=9 format=3 uid="uid://dq0tlvedld46e"]
 
 [ext_resource type="Texture2D" uid="uid://w5tb4xqlgb2a" path="res://Textures & backgrounds/space.png" id="1_1yvyi"]
 [ext_resource type="Texture2D" uid="uid://dnt6tp08375gk" path="res://Textures & backgrounds/Terrain (16x16).png" id="2_se4cr"]
 [ext_resource type="PackedScene" uid="uid://ugj8c7wbawvl" path="res://scenes/Main_character.tscn" id="3_b4e15"]
 [ext_resource type="Texture2D" uid="uid://b4gecuruxscod" path="res://Textures & backgrounds/heartPixels.png" id="4_v2kms"]
+[ext_resource type="PackedScene" uid="uid://di6acce08g0e3" path="res://scenes/Portal.tscn" id="5_ej1mb"]
+[ext_resource type="PackedScene" uid="uid://53qbwpbola00" path="res://scenes/Level Menu.tscn" id="6_tr0ar"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_d8xu6"]
 texture = ExtResource("2_se4cr")
@@ -452,3 +454,7 @@ texture = ExtResource("4_v2kms")
 expand_mode = 1
 stretch_mode = 4
 metadata/_edit_use_anchors_ = true
+
+[node name="Area2D" parent="." instance=ExtResource("5_ej1mb")]
+position = Vector2(3534, 385)
+target_level = ExtResource("6_tr0ar")
