@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=3 uid="uid://8dlfha70r5qb"]
+[gd_scene load_steps=13 format=3 uid="uid://dfvlcomuu5gg0"]
 
 [ext_resource type="Script" path="res://scenes/level_1.gd" id="1_48hof"]
 [ext_resource type="Texture2D" uid="uid://b5ikrrx5dbgkm" path="res://Textures & backgrounds/Maan achtergrond.png" id="2_o8mmh"]
