@@ -1,7 +1,7 @@
 [gd_scene load_steps=16 format=3 uid="uid://8dlfha70r5qb"]
 
 [ext_resource type="Script" path="res://scenes/level_1.gd" id="1_48hof"]
-[ext_resource type="Texture2D" uid="uid://b5ikrrx5dbgkm" path="res://Textures & backgrounds/Maan achtergrond.png" id="2_o8mmh"]
+[ext_resource type="Texture2D" uid="uid://w5tb4xqlgb2a" path="res://Textures & backgrounds/space.png" id="2_gqlw5"]
 [ext_resource type="Texture2D" uid="uid://dnt6tp08375gk" path="res://Textures & backgrounds/Terrain (16x16).png" id="3_2irm1"]
 [ext_resource type="PackedScene" uid="uid://ugj8c7wbawvl" path="res://scenes/Main_character.tscn" id="4_pfpdy"]
 [ext_resource type="Script" path="res://area_2d.gd" id="5_11lxf"]
@@ -355,11 +355,12 @@ distance = -233.0
 script = ExtResource("1_48hof")
 
 [node name="achtergrond" type="TextureRect" parent="."]
-offset_left = 162.0
-offset_top = -617.0
-offset_right = 1228.0
-offset_bottom = 407.0
-texture = ExtResource("2_o8mmh")
+offset_left = 92.0
+offset_top = -5797.0
+offset_right = 1588.0
+offset_bottom = -4563.0
+scale = Vector2(10, 10)
+texture = ExtResource("2_gqlw5")
 
 [node name="TileMap" type="TileMap" parent="."]
 texture_filter = 1
