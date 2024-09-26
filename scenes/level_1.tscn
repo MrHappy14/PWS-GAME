@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 [gd_scene load_steps=18 format=3 uid="uid://8dlfha70r5qb"]
+=======
+[gd_scene load_steps=15 format=3 uid="uid://dfvlcomuu5gg0"]
+>>>>>>> d61270c1a710dcff7135e63072ba1220deed9fd2
 
 [ext_resource type="Script" path="res://scenes/level_1.gd" id="1_48hof"]
 [ext_resource type="Texture2D" uid="uid://w5tb4xqlgb2a" path="res://Textures & backgrounds/space.png" id="2_gqlw5"]
@@ -8,8 +12,12 @@
 [ext_resource type="PackedScene" uid="uid://c0nkesgl8eaff" path="res://scenes/Banaan_collectible.tscn" id="6_3q1no"]
 [ext_resource type="Script" path="res://scenes/game_manager.gd" id="7_gbk8x"]
 [ext_resource type="PackedScene" uid="uid://di6acce08g0e3" path="res://scenes/Portal.tscn" id="8_eb054"]
+<<<<<<< HEAD
 [ext_resource type="PackedScene" uid="uid://dq0tlvedld46e" path="res://scenes/Level2.tscn" id="9_7l4dr"]
 [ext_resource type="Texture2D" uid="uid://b4gecuruxscod" path="res://Textures & backgrounds/heartPixels.png" id="10_udo6c"]
+=======
+[ext_resource type="PackedScene" uid="uid://dq0tlvedld46e" path="res://scenes/level2.tscn" id="9_7l4dr"]
+>>>>>>> d61270c1a710dcff7135e63072ba1220deed9fd2
 [ext_resource type="Script" path="res://scenes/deathzone.gd" id="11_t6sr1"]
 [ext_resource type="Script" path="res://scenes/timer.gd" id="12_6pm1h"]
 [ext_resource type="Script" path="res://scenes/pause.gd" id="12_l7eu8"]
@@ -504,6 +512,7 @@ text = "Points: 0"
 horizontal_alignment = 1
 vertical_alignment = 1
 
+<<<<<<< HEAD
 [node name="Hearts" type="Panel" parent="UI"]
 anchors_preset = 1
 anchor_left = 1.0
@@ -584,6 +593,8 @@ text = "00"
 horizontal_alignment = 2
 vertical_alignment = 1
 
+=======
+>>>>>>> d61270c1a710dcff7135e63072ba1220deed9fd2
 [node name="Deathzone" type="Area2D" parent="."]
 position = Vector2(8, -12)
 script = ExtResource("11_t6sr1")
