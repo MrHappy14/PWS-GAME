@@ -1,7 +1,7 @@
-[gd_scene load_steps=16 format=3 uid="uid://dfvlcomuu5gg0"]
+[gd_scene load_steps=15 format=3 uid="uid://dfvlcomuu5gg0"]
 
 [ext_resource type="Script" path="res://scenes/level_1.gd" id="1_48hof"]
-[ext_resource type="Texture2D" uid="uid://nnln36vk6gpc" path="res://Textures & backgrounds/nebula x 3.png" id="2_s7saa"]
+[ext_resource type="Texture2D" uid="uid://b5ikrrx5dbgkm" path="res://Textures & backgrounds/Maan achtergrond.png" id="2_o8mmh"]
 [ext_resource type="Texture2D" uid="uid://dnt6tp08375gk" path="res://Textures & backgrounds/Terrain (16x16).png" id="3_2irm1"]
 [ext_resource type="PackedScene" uid="uid://ugj8c7wbawvl" path="res://scenes/Main_character.tscn" id="4_pfpdy"]
 [ext_resource type="Script" path="res://area_2d.gd" id="5_11lxf"]
@@ -9,7 +9,6 @@
 [ext_resource type="Script" path="res://scenes/game_manager.gd" id="7_gbk8x"]
 [ext_resource type="PackedScene" uid="uid://di6acce08g0e3" path="res://scenes/Portal.tscn" id="8_eb054"]
 [ext_resource type="PackedScene" uid="uid://dq0tlvedld46e" path="res://scenes/level2.tscn" id="9_7l4dr"]
-[ext_resource type="Texture2D" uid="uid://b4gecuruxscod" path="res://Textures & backgrounds/heartPixels.png" id="10_udo6c"]
 [ext_resource type="Script" path="res://scenes/deathzone.gd" id="11_t6sr1"]
 [ext_resource type="Script" path="res://scenes/pause.gd" id="12_l7eu8"]
 
@@ -355,12 +354,11 @@ distance = -233.0
 script = ExtResource("1_48hof")
 
 [node name="achtergrond" type="TextureRect" parent="."]
-offset_left = 92.0
-offset_top = -5797.0
-offset_right = 1588.0
-offset_bottom = -4563.0
-scale = Vector2(10, 10)
-texture = ExtResource("2_s7saa")
+offset_left = 162.0
+offset_top = -617.0
+offset_right = 1228.0
+offset_bottom = 407.0
+texture = ExtResource("2_o8mmh")
 
 [node name="TileMap" type="TileMap" parent="."]
 texture_filter = 1
@@ -499,51 +497,6 @@ theme_override_font_sizes/font_size = 30
 text = "Points: 0"
 horizontal_alignment = 1
 vertical_alignment = 1
-
-[node name="Hearts" type="Panel" parent="UI"]
-anchors_preset = 1
-anchor_left = 1.0
-anchor_right = 1.0
-offset_left = -132.0
-offset_bottom = 41.0
-grow_horizontal = 0
-
-[node name="TextureRect" type="TextureRect" parent="UI/Hearts"]
-layout_mode = 1
-anchors_preset = 9
-anchor_bottom = 1.0
-offset_left = 2.0
-offset_right = 46.0
-grow_vertical = 2
-texture = ExtResource("10_udo6c")
-expand_mode = 1
-stretch_mode = 4
-
-[node name="TextureRect2" type="TextureRect" parent="UI/Hearts"]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_left = 89.0
-grow_horizontal = 2
-grow_vertical = 2
-texture = ExtResource("10_udo6c")
-expand_mode = 1
-stretch_mode = 4
-
-[node name="TextureRect3" type="TextureRect" parent="UI/Hearts"]
-layout_mode = 1
-anchors_preset = 13
-anchor_left = 0.5
-anchor_right = 0.5
-anchor_bottom = 1.0
-offset_left = -20.0
-offset_right = 21.0
-grow_horizontal = 2
-grow_vertical = 2
-texture = ExtResource("10_udo6c")
-expand_mode = 1
-stretch_mode = 4
 
 [node name="Deathzone" type="Area2D" parent="."]
 position = Vector2(8, -12)
