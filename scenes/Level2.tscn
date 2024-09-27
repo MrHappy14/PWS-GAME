@@ -1,8 +1,11 @@
-[gd_scene load_steps=6 format=3 uid="uid://dq0tlvedld46e"]
+[gd_scene load_steps=10 format=3 uid="uid://dq0tlvedld46e"]
 
 [ext_resource type="Texture2D" uid="uid://w5tb4xqlgb2a" path="res://Textures & backgrounds/space.png" id="1_1yvyi"]
 [ext_resource type="Texture2D" uid="uid://dnt6tp08375gk" path="res://Textures & backgrounds/Terrain (16x16).png" id="2_se4cr"]
 [ext_resource type="PackedScene" uid="uid://ugj8c7wbawvl" path="res://scenes/Main_character.tscn" id="3_b4e15"]
+[ext_resource type="PackedScene" uid="uid://di6acce08g0e3" path="res://scenes/Portal.tscn" id="4_qfhdh"]
+[ext_resource type="PackedScene" uid="uid://ct1jganqm1hl3" path="res://scenes/level_3.tscn" id="5_455bj"]
+[ext_resource type="Script" path="res://scenes/deathzone.gd" id="6_4r0sd"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_d8xu6"]
 texture = ExtResource("2_se4cr")
@@ -339,6 +342,9 @@ texture = ExtResource("2_se4cr")
 physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_d8xu6")
 
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_rdieg"]
+distance = -492.0
+
 [node name="Level 2" type="Node"]
 
 [node name="Texturerect" type="TextureRect" parent="."]
@@ -366,3 +372,17 @@ limit_left = -100
 limit_bottom = 1055
 position_smoothing_enabled = true
 position_smoothing_speed = 7.0
+
+[node name="Area2D" parent="." instance=ExtResource("4_qfhdh")]
+position = Vector2(3388, 411)
+target_level = ExtResource("5_455bj")
+
+[node name="Deathzone" type="Area2D" parent="."]
+position = Vector2(8, -12)
+script = ExtResource("6_4r0sd")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Deathzone"]
+position = Vector2(5484, 420)
+shape = SubResource("WorldBoundaryShape2D_rdieg")
+
+[connection signal="body_entered" from="Deathzone" to="Deathzone" method="_on_body_entered"]
