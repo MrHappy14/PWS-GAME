@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=3 uid="uid://8dlfha70r5qb"]
+[gd_scene load_steps=18 format=3 uid="uid://bg1ftw34rn4ox"]
 
 [ext_resource type="Script" path="res://scenes/level_1.gd" id="1_48hof"]
 [ext_resource type="Texture2D" uid="uid://w5tb4xqlgb2a" path="res://Textures & backgrounds/space.png" id="2_gqlw5"]
@@ -432,7 +432,6 @@ target_level = ExtResource("9_7l4dr")
 script = ExtResource("12_l7eu8")
 
 [node name="PausePanel" type="Panel" parent="UI/Pause"]
-visible = false
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
@@ -486,6 +485,7 @@ text = "MAIN MENU"
 layout_mode = 2
 theme_override_font_sizes/font_size = 50
 text = "QUIT"
+script = ExtResource("12_l7eu8")
 
 [node name="Panel" type="Panel" parent="UI"]
 offset_right = 163.0
@@ -601,7 +601,6 @@ script = SubResource("GDScript_w7l57")
 
 [connection signal="pressed" from="UI/Pause/PausePanel/VBoxContainer/Resume" to="UI/Pause" method="_on_resume_pressed"]
 [connection signal="pressed" from="UI/Pause/PausePanel/VBoxContainer/Main Menu" to="UI/Pause" method="_on_main_menu_pressed"]
-[connection signal="pressed" from="UI/Pause/PausePanel/VBoxContainer/Quit" to="UI/Pause" method="_on_quit_pressed"]
-[connection signal="pressed" from="UI/Pause/PausePanel/VBoxContainer/Quit" to="UI/Pause/PausePanel" method="_on_quit_pressed"]
+[connection signal="pressed" from="UI/Pause/PausePanel/VBoxContainer/Quit" to="UI/Pause/PausePanel" method="_on_button_pressed"]
 [connection signal="body_entered" from="Deathzone" to="Deathzone" method="_on_body_entered"]
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
