@@ -1,11 +1,11 @@
-[gd_scene load_steps=9 format=3 uid="uid://dq0tlvedld46e"]
+[gd_scene load_steps=10 format=3 uid="uid://dq0tlvedld46e"]
 
 [ext_resource type="Texture2D" uid="uid://w5tb4xqlgb2a" path="res://Textures & backgrounds/space.png" id="1_1yvyi"]
 [ext_resource type="Texture2D" uid="uid://dnt6tp08375gk" path="res://Textures & backgrounds/Terrain (16x16).png" id="2_se4cr"]
 [ext_resource type="PackedScene" uid="uid://ugj8c7wbawvl" path="res://scenes/Main_character.tscn" id="3_b4e15"]
-[ext_resource type="Texture2D" uid="uid://b4gecuruxscod" path="res://Textures & backgrounds/heartPixels.png" id="4_v2kms"]
-[ext_resource type="PackedScene" uid="uid://di6acce08g0e3" path="res://scenes/Portal.tscn" id="5_ej1mb"]
-[ext_resource type="PackedScene" uid="uid://53qbwpbola00" path="res://scenes/Level Menu.tscn" id="6_tr0ar"]
+[ext_resource type="PackedScene" uid="uid://di6acce08g0e3" path="res://scenes/Portal.tscn" id="4_qfhdh"]
+[ext_resource type="PackedScene" uid="uid://ct1jganqm1hl3" path="res://scenes/level_3.tscn" id="5_455bj"]
+[ext_resource type="Script" path="res://scenes/deathzone.gd" id="6_4r0sd"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_d8xu6"]
 texture = ExtResource("2_se4cr")
@@ -337,25 +337,13 @@ texture = ExtResource("2_se4cr")
 24:8/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 22:9/0 = 0
 22:9/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
-25:4/0 = 0
-26:4/0 = 0
-27:4/0 = 0
-25:5/0 = 0
-26:5/0 = 0
-27:5/0 = 0
-25:6/0 = 0
-26:6/0 = 0
-27:6/0 = 0
-25:7/0 = 0
-26:7/0 = 0
-27:7/0 = 0
-25:8/0 = 0
-26:8/0 = 0
-27:8/0 = 0
 
 [sub_resource type="TileSet" id="TileSet_0h5lk"]
 physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_d8xu6")
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_rdieg"]
+distance = -492.0
 
 [node name="Level 2" type="Node"]
 
@@ -385,76 +373,16 @@ limit_bottom = 1055
 position_smoothing_enabled = true
 position_smoothing_speed = 7.0
 
-[node name="UI" type="CanvasLayer" parent="."]
+[node name="Area2D" parent="." instance=ExtResource("4_qfhdh")]
+position = Vector2(3388, 411)
+target_level = ExtResource("5_455bj")
 
-[node name="Panel" type="Panel" parent="UI"]
-offset_right = 166.0
-offset_bottom = 62.0
-metadata/_edit_use_anchors_ = true
+[node name="Deathzone" type="Area2D" parent="."]
+position = Vector2(8, -12)
+script = ExtResource("6_4r0sd")
 
-[node name="PointsLabel" type="Label" parent="UI/Panel"]
-unique_name_in_owner = true
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-theme_override_font_sizes/font_size = 30
-text = "Points: 0"
-horizontal_alignment = 1
-vertical_alignment = 1
-metadata/_edit_use_anchors_ = true
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Deathzone"]
+position = Vector2(5484, 420)
+shape = SubResource("WorldBoundaryShape2D_rdieg")
 
-[node name="Hearts" type="Panel" parent="UI"]
-anchors_preset = 1
-anchor_left = 1.0
-anchor_right = 1.0
-offset_left = -132.0
-offset_bottom = 41.0
-grow_horizontal = 0
-metadata/_edit_use_anchors_ = true
-
-[node name="TextureRect" type="TextureRect" parent="UI/Hearts"]
-layout_mode = 1
-anchors_preset = 9
-anchor_bottom = 1.0
-offset_left = 2.0
-offset_right = 46.0
-grow_vertical = 2
-texture = ExtResource("4_v2kms")
-expand_mode = 1
-stretch_mode = 4
-metadata/_edit_use_anchors_ = true
-
-[node name="TextureRect2" type="TextureRect" parent="UI/Hearts"]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_left = 89.0
-grow_horizontal = 2
-grow_vertical = 2
-texture = ExtResource("4_v2kms")
-expand_mode = 1
-stretch_mode = 4
-metadata/_edit_use_anchors_ = true
-
-[node name="TextureRect3" type="TextureRect" parent="UI/Hearts"]
-layout_mode = 1
-anchors_preset = 13
-anchor_left = 0.5
-anchor_right = 0.5
-anchor_bottom = 1.0
-offset_left = -20.0
-offset_right = 21.0
-grow_horizontal = 2
-grow_vertical = 2
-texture = ExtResource("4_v2kms")
-expand_mode = 1
-stretch_mode = 4
-metadata/_edit_use_anchors_ = true
-
-[node name="Area2D" parent="." instance=ExtResource("5_ej1mb")]
-position = Vector2(3534, 385)
-target_level = ExtResource("6_tr0ar")
+[connection signal="body_entered" from="Deathzone" to="Deathzone" method="_on_body_entered"]

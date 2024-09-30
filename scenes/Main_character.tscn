@@ -146,12 +146,11 @@ script = ExtResource("1_gq1o5")
 
 [node name="Sprite2D" type="AnimatedSprite2D" parent="."]
 texture_filter = 1
-position = Vector2(432, 365)
 sprite_frames = SubResource("SpriteFrames_wc7v2")
 autoplay = "default"
 frame_progress = 0.590766
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(432, 365.5)
+position = Vector2(0, 0.5)
 shape = SubResource("RectangleShape2D_7swib")
 debug_color = Color(6.73831e-07, 0.600105, 0.699397, 0.42)
