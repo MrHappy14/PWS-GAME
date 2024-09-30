@@ -1,12 +1,22 @@
+<<<<<<< HEAD
 [gd_scene load_steps=11 format=3 uid="uid://dq0tlvedld46e"]
+=======
+[gd_scene load_steps=10 format=3 uid="uid://dq0tlvedld46e"]
+>>>>>>> main
 
 [ext_resource type="Texture2D" uid="uid://w5tb4xqlgb2a" path="res://Textures & backgrounds/space.png" id="1_1yvyi"]
 [ext_resource type="Texture2D" uid="uid://dnt6tp08375gk" path="res://Textures & backgrounds/Terrain (16x16).png" id="2_se4cr"]
 [ext_resource type="PackedScene" uid="uid://ugj8c7wbawvl" path="res://scenes/Main_character.tscn" id="3_b4e15"]
+<<<<<<< HEAD
 [ext_resource type="Script" path="res://scenes/deathzone.gd" id="4_yutuf"]
 [ext_resource type="Script" path="res://scenes/pause.gd" id="5_wg832"]
 [ext_resource type="Texture2D" uid="uid://b4gecuruxscod" path="res://Textures & backgrounds/heartPixels.png" id="6_lx3o0"]
 [ext_resource type="Script" path="res://scenes/timer.gd" id="7_kxcfk"]
+=======
+[ext_resource type="PackedScene" uid="uid://di6acce08g0e3" path="res://scenes/Portal.tscn" id="4_qfhdh"]
+[ext_resource type="PackedScene" uid="uid://ct1jganqm1hl3" path="res://scenes/level_3.tscn" id="5_455bj"]
+[ext_resource type="Script" path="res://scenes/deathzone.gd" id="6_4r0sd"]
+>>>>>>> main
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_d8xu6"]
 texture = ExtResource("2_se4cr")
@@ -343,9 +353,14 @@ texture = ExtResource("2_se4cr")
 physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_d8xu6")
 
+<<<<<<< HEAD
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_lt5i3"]
 normal = Vector2(-0.00423725, -0.999991)
 distance = 119.0
+=======
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_rdieg"]
+distance = -492.0
+>>>>>>> main
 
 [node name="Level 2" type="Node"]
 
@@ -375,6 +390,7 @@ limit_bottom = 1055
 position_smoothing_enabled = true
 position_smoothing_speed = 7.0
 
+<<<<<<< HEAD
 [node name="Deathzone" type="Area2D" parent="."]
 position = Vector2(-4, -1)
 script = ExtResource("4_yutuf")
@@ -549,3 +565,18 @@ vertical_alignment = 1
 [connection signal="pressed" from="UI/Pause/PausePanel/VBoxContainer/Main Menu" to="UI/Pause" method="_on_main_menu_pressed"]
 [connection signal="pressed" from="UI/Pause/PausePanel/VBoxContainer/Quit" to="UI/Pause" method="_on_quit_pressed"]
 [connection signal="pressed" from="UI/Pause/PausePanel/VBoxContainer/Quit" to="UI/Pause/PausePanel" method="_on_quit_pressed"]
+=======
+[node name="Area2D" parent="." instance=ExtResource("4_qfhdh")]
+position = Vector2(3388, 411)
+target_level = ExtResource("5_455bj")
+
+[node name="Deathzone" type="Area2D" parent="."]
+position = Vector2(8, -12)
+script = ExtResource("6_4r0sd")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Deathzone"]
+position = Vector2(5484, 420)
+shape = SubResource("WorldBoundaryShape2D_rdieg")
+
+[connection signal="body_entered" from="Deathzone" to="Deathzone" method="_on_body_entered"]
+>>>>>>> main
