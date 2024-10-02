@@ -86,7 +86,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"default",
-"speed": 4.0
+"speed": 5.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -148,7 +148,7 @@ script = ExtResource("1_gq1o5")
 texture_filter = 1
 sprite_frames = SubResource("SpriteFrames_wc7v2")
 autoplay = "default"
-frame_progress = 0.590766
+frame_progress = 0.28628
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, 0.5)
