@@ -362,7 +362,7 @@ script = ExtResource("1_48hof")
 [node name="achtergrond" type="TextureRect" parent="."]
 offset_left = 44.0
 offset_top = -5692.0
-offset_right = 1540.0
+offset_right = 1833.0
 offset_bottom = -4458.0
 scale = Vector2(10, 10)
 texture = ExtResource("2_gqlw5")

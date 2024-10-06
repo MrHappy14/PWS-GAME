@@ -1,6 +1,6 @@
 extends Panel
 
-var time: float = 10.0
+var time: float = 135.0
 var minutes: int = 0
 var second: int = 0
 var msec: int = 0
