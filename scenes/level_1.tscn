@@ -362,9 +362,9 @@ script = ExtResource("1_48hof")
 enemy_scene = ExtResource("13_8ux7g")
 
 [node name="achtergrond" type="TextureRect" parent="."]
-offset_left = -256.0
+offset_left = -255.0
 offset_top = -5627.0
-offset_right = 1533.0
+offset_right = 1534.0
 offset_bottom = -4393.0
 scale = Vector2(10, 10)
 texture = ExtResource("2_gqlw5")
