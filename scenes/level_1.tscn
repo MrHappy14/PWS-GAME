@@ -405,7 +405,7 @@ script = ExtResource("7_gbk8x")
 position = Vector2(755, 481)
 
 [node name="Area2D6" parent="collectibles" instance=ExtResource("6_3q1no")]
-position = Vector2(1896, 371)
+position = Vector2(1860, 233)
 
 [node name="Area2D7" parent="collectibles" instance=ExtResource("6_3q1no")]
 position = Vector2(1371, 309)
