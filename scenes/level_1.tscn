@@ -359,12 +359,13 @@ distance = -233.0
 
 [node name="Level 1" type="Node"]
 script = ExtResource("1_48hof")
+enemy_scene = ExtResource("13_8ux7g")
 
 [node name="achtergrond" type="TextureRect" parent="."]
-offset_left = 44.0
-offset_top = -5692.0
-offset_right = 1833.0
-offset_bottom = -4458.0
+offset_left = -170.0
+offset_top = -5713.0
+offset_right = 1619.0
+offset_bottom = -4479.0
 scale = Vector2(10, 10)
 texture = ExtResource("2_gqlw5")
 
@@ -397,11 +398,6 @@ script = ExtResource("5_11lxf")
 [node name="GameManager" type="Node" parent="."]
 unique_name_in_owner = true
 script = ExtResource("7_gbk8x")
-
-[node name="Enemies" type="Node" parent="."]
-
-[node name="Enemy2" parent="Enemies" instance=ExtResource("13_8ux7g")]
-position = Vector2(1315, 366)
 
 [node name="collectibles" type="Node" parent="."]
 
@@ -580,6 +576,9 @@ color = Color(0, 0, 0, 1)
 
 [node name="Area2D" type="Area2D" parent="CanvasLayer"]
 position = Vector2(10116, -9)
+
+[node name="Area2D2" type="Area2D" parent="."]
+position = Vector2(1259, 377)
 
 [connection signal="pressed" from="UI/Pause/PausePanel/VBoxContainer/Resume" to="UI/Pause" method="_on_resume_pressed"]
 [connection signal="pressed" from="UI/Pause/PausePanel/VBoxContainer/Main Menu" to="UI/Pause" method="_on_main_menu_pressed"]
