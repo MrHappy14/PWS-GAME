@@ -8,7 +8,7 @@
 [ext_resource type="PackedScene" uid="uid://c3ixnwg5q7rug" path="res://scenes/Banaan_collectible.tscn" id="6_3q1no"]
 [ext_resource type="Script" path="res://scenes/game_manager.gd" id="7_gbk8x"]
 [ext_resource type="PackedScene" uid="uid://di6acce08g0e3" path="res://scenes/Portal.tscn" id="8_eb054"]
-[ext_resource type="PackedScene" uid="uid://dq0tlvedld46e" path="res://scenes/Level2.tscn" id="9_7l4dr"]
+[ext_resource type="PackedScene" uid="uid://cdgymus652p7l" path="res://scenes/level2.tscn" id="9_7l4dr"]
 [ext_resource type="Script" path="res://scenes/deathzone.gd" id="11_t6sr1"]
 [ext_resource type="Script" path="res://scenes/timer.gd" id="12_6pm1h"]
 [ext_resource type="Script" path="res://scenes/pause.gd" id="12_l7eu8"]
