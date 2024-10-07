@@ -8,11 +8,21 @@
 [ext_resource type="PackedScene" uid="uid://c3ixnwg5q7rug" path="res://scenes/Banaan_collectible.tscn" id="6_3q1no"]
 [ext_resource type="Script" path="res://scenes/game_manager.gd" id="7_gbk8x"]
 [ext_resource type="PackedScene" uid="uid://di6acce08g0e3" path="res://scenes/Portal.tscn" id="8_eb054"]
+<<<<<<< Updated upstream
 [ext_resource type="PackedScene" uid="uid://dq0tlvedld46e" path="res://scenes/Level2.tscn" id="9_7l4dr"]
 [ext_resource type="Texture2D" uid="uid://b4gecuruxscod" path="res://Textures & backgrounds/heartPixels.png" id="10_udo6c"]
 [ext_resource type="Script" path="res://scenes/deathzone.gd" id="11_t6sr1"]
 [ext_resource type="Script" path="res://scenes/timer.gd" id="12_6pm1h"]
 [ext_resource type="Script" path="res://scenes/pause.gd" id="12_l7eu8"]
+=======
+[ext_resource type="PackedScene" uid="uid://dq0tlvedld46e" path="res://scenes/level2.tscn" id="9_7l4dr"]
+[ext_resource type="Script" path="res://scenes/deathzone.gd" id="11_t6sr1"]
+[ext_resource type="Script" path="res://scenes/timer.gd" id="12_6pm1h"]
+[ext_resource type="Script" path="res://scenes/pause.gd" id="12_l7eu8"]
+
+[sub_resource type="Resource" id="Resource_ms880"]
+metadata/__load_path__ = "res://scenes/enemy.tscn"
+>>>>>>> Stashed changes
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_pyvpk"]
 texture = ExtResource("3_2irm1")
@@ -356,6 +366,10 @@ distance = -233.0
 
 [node name="Level 1" type="Node"]
 script = ExtResource("1_48hof")
+<<<<<<< Updated upstream
+=======
+enemy_scene = SubResource("Resource_ms880")
+>>>>>>> Stashed changes
 
 [node name="achtergrond" type="TextureRect" parent="."]
 offset_left = 7.00002
