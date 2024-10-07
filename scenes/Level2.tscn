@@ -351,10 +351,10 @@ distance = -492.0
 
 [node name="Texturerect" type="TextureRect" parent="."]
 texture_filter = 1
-offset_left = -1684.0
-offset_top = -1015.0
-offset_right = 4686.0
-offset_bottom = 2190.0
+offset_left = -2445.0
+offset_top = -800.0
+offset_right = 3925.0
+offset_bottom = 2405.0
 texture = ExtResource("1_1yvyi")
 stretch_mode = 1
 
@@ -366,10 +366,10 @@ format = 2
 layer_0/tile_data = PackedInt32Array(2818219, 1376256, 0, 2883755, 1376256, 1, 2818220, 1441792, 0, 2883756, 1441792, 1, 2752701, 1376256, 0, 2818237, 1376256, 1, 2752702, 1441792, 0, 2818238, 1441792, 1, 2162888, 1376256, 0, 2228424, 1376256, 1, 2162889, 1441792, 0, 2228425, 1441792, 1, 1769680, 1376256, 0, 1835216, 1376256, 1, 1769681, 1441792, 0, 1835217, 1441792, 1, 1507356, 1376256, 0, 1572892, 1376256, 1, 1572893, 1441792, 1, 1703998, 1376256, 0, 1769534, 1376256, 1, 1769535, 1441792, 1, 1835100, 1376256, 0, 1900636, 1376256, 1, 1900637, 1441792, 1, 2162815, 1376256, 0, 2228351, 1376256, 1, 2228352, 1441792, 1, 1507357, 1441792, 0, 1703999, 1441792, 0, 1835101, 1441792, 0, 2162816, 1441792, 0)
 
 [node name="CharacterBody2D" parent="." instance=ExtResource("3_b4e15")]
-position = Vector2(34, -15)
+position = Vector2(463, 347)
 
 [node name="Camera2D" type="Camera2D" parent="CharacterBody2D"]
-position = Vector2(543, 339)
+position = Vector2(2, 0)
 limit_left = -100
 limit_bottom = 1055
 position_smoothing_enabled = true
