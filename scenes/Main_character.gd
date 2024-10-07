@@ -8,6 +8,9 @@ const JUMP_VELOCITY = -160.0
 # Get the gravity from the project settings to be synced with RigidBody nodes.
 var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
 
+func jump():
+	velocity.y = JUMP_VELOCITY
+
 func _ready():# Access the root node of the current scene
 	var current_scene = get_tree().root.get_child(0)
 	

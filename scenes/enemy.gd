@@ -6,9 +6,11 @@ extends RigidBody2D
 var direction: Vector2 = Vector2(1, 0)  # Default movement direction (to the right)
 var start_position: Vector2  # Starting position of the enemy
 
+
 func _ready() -> void:
 	start_position = position  # Store the enemy's starting position
-	gravity_scale = 0          # Set gravity scale to 0 to prevent falling
+
+
 
 func _physics_process(delta: float) -> void:
 	var distance_traveled = position.x - start_position.x
@@ -29,15 +31,13 @@ func _physics_process(delta: float) -> void:
 		print("Collision detected for enemy at ", position)
 
 
-
-
-
 func _on_area_2d_body_entered(body: Node2D) -> void:
 	if(body.name == "CharacterBody2D"):
 		var y_delta = position.y - body.position.y
 		if (y_delta > 20):
 			print("Destroy enemy")
 			queue_free()
+			body.jump()
 		else:
 			print("Decrease player health")
 			get_tree().reload_current_scene()
