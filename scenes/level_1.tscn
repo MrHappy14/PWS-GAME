@@ -12,7 +12,7 @@
 [ext_resource type="Script" path="res://scenes/deathzone.gd" id="11_t6sr1"]
 [ext_resource type="Script" path="res://scenes/timer.gd" id="12_6pm1h"]
 [ext_resource type="Script" path="res://scenes/pause.gd" id="12_l7eu8"]
-[ext_resource type="PackedScene" uid="uid://bfdfdldrn0hit" path="res://scenes/enemy.tscn" id="13_8ux7g"]
+[ext_resource type="PackedScene" uid="uid://dfd5vmrrqecvg" path="res://scenes/enemy.tscn" id="13_8ux7g"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_pyvpk"]
 texture = ExtResource("3_2irm1")
