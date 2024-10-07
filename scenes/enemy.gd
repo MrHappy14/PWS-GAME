@@ -1,26 +1,35 @@
+# Enemy.gd
 extends RigidBody2D
 
-@export var speed: float = 100.0  # Speed of enemy movement
+@export var speed: float = 50.0  # Speed of enemy movement
+@export var max_distance: float = 400.0  # Maximum distance enemy can walk
 var direction: Vector2 = Vector2(1, 0)  # Default movement direction (to the right)
-var velocity: Vector2 = Vector2(0, 0)  # Initial velocity
+var start_position: Vector2  # Starting position of the enemy
 
 func _ready() -> void:
-	# Modify movement based on the starting position (optional)
-	if position.x > 400:
-		direction = Vector2(-1, 0)  # Move left if starting on the right side
-	else:
-		direction = Vector2(1, 0)   # Move right if starting on the left side
+	start_position = position  # Store the enemy's starting position
+	gravity_scale = 0          # Set gravity scale to 0 to prevent falling
 
 func _physics_process(delta: float) -> void:
-	# Set velocity based on direction and speed
-	velocity = direction * speed * delta  # Adjust for frame rate by multiplying with delta
+	var distance_traveled = position.x - start_position.x
+
+	if abs(distance_traveled) >= max_distance:
+		direction *= -1  # Reverse direction
+
+	var velocity = direction * speed * delta  # Use delta to adjust for frame rate
 
 	# Move the enemy using move_and_collide()
 	var collision = move_and_collide(velocity)
 
-	# If a collision occurs, reverse direction
+	# Debugging outputs
+	print("Enemy at ", position, " moving with velocity ", velocity)
+
+	# Check if a collision happened
 	if collision:
-		direction *= -1  # Reverse the direction when hitting a wall or obstacle
+		print("Collision detected for enemy at ", position)
+
+
+
 
 
 func _on_area_2d_body_entered(body: Node2D) -> void:
