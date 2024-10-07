@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=3 uid="uid://bh0uwkpilpr0g"]
+[gd_scene load_steps=19 format=3 uid="uid://bh0uwkpilpr0g"]
 
 [ext_resource type="Script" path="res://scenes/level_1.gd" id="1_48hof"]
 [ext_resource type="Texture2D" uid="uid://w5tb4xqlgb2a" path="res://Textures & backgrounds/space.png" id="2_gqlw5"]
@@ -12,6 +12,7 @@
 [ext_resource type="Script" path="res://scenes/deathzone.gd" id="11_t6sr1"]
 [ext_resource type="Script" path="res://scenes/timer.gd" id="12_6pm1h"]
 [ext_resource type="Script" path="res://scenes/pause.gd" id="12_l7eu8"]
+[ext_resource type="PackedScene" uid="uid://bfdfdldrn0hit" path="res://scenes/enemy.tscn" id="13_8ux7g"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_pyvpk"]
 texture = ExtResource("3_2irm1")
@@ -397,6 +398,11 @@ script = ExtResource("5_11lxf")
 unique_name_in_owner = true
 script = ExtResource("7_gbk8x")
 
+[node name="Enemies" type="Node" parent="."]
+
+[node name="Enemy2" parent="Enemies" instance=ExtResource("13_8ux7g")]
+position = Vector2(1315, 366)
+
 [node name="collectibles" type="Node" parent="."]
 
 [node name="Area2D3" parent="collectibles" instance=ExtResource("6_3q1no")]
@@ -427,7 +433,7 @@ position = Vector2(3020, -72)
 position = Vector2(3038, -72)
 
 [node name="Area2D14" parent="collectibles" instance=ExtResource("6_3q1no")]
-position = Vector2(2571, 367)
+position = Vector2(2324, 167)
 
 [node name="portal" parent="." instance=ExtResource("8_eb054")]
 position = Vector2(13897, -17)
