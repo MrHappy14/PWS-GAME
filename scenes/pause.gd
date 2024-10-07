@@ -1,6 +1,6 @@
 extends Node
 
-@onready var pause_panel: Panel = $PausePanel
+@onready var pause: Panel = $PausePanel
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -8,15 +8,15 @@ func _ready() -> void:
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
+func _process(_delta: float) -> void:
 	var esc_pressed = Input.is_action_just_pressed("pause")
 	if (esc_pressed ==  true):
 		get_tree().paused = true
-		pause_panel.show()
+		pause.show()
 
 
 func _on_resume_pressed() -> void:
-	pause_panel.hide()
+	pause.hide()
 	get_tree().paused = false
 
 
@@ -24,5 +24,9 @@ func _on_main_menu_pressed() -> void:
 	get_tree().paused = false 
 	get_tree().change_scene_to_file("res://scenes/main menu.tscn")
 
-func _on_Quit_pressed() -> void:
+func _on_pressed() -> void:
+	get_tree().quit()
+
+
+func _on_quit_3_pressed() -> void:
 	get_tree().quit()
