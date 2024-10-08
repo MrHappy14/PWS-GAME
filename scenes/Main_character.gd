@@ -16,9 +16,9 @@ func _ready():# Access the root node of the current scene
 	
 	# Check the scene name or set the gravity based on the scene
 	if current_scene.name == "Level 1":
-		gravity = 162
-	elif current_scene.name == "Level 2":
 		gravity = 75
+	elif current_scene.name == "Level 2":
+		gravity = 162
 	elif current_scene.name == "Level 3":
 		gravity = 371
 
