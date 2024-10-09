@@ -1,5 +1,7 @@
 extends CharacterBody2D
 
+@onready var game_manager: Node = %GameManager
+
 var speed = 50.0
 var facing_right = true
 
@@ -39,8 +41,6 @@ func flip():
 	else:
 		speed = abs(speed) * -1
 
-
-
 func _on_area_2d_body_entered(body: Node2D) -> void:
 	if(body.name == "CharacterBody2D"):
 		var y_delta = position.y - body.position.y
@@ -49,6 +49,10 @@ func _on_area_2d_body_entered(body: Node2D) -> void:
 			print("Destroy enemy")
 			queue_free()
 			body.jump()
+			game_manager.add_point()
 		else:
 			print("kill player")
 			get_tree().reload_current_scene()
+	
+	if "Enemy" in body.name:
+		flip()
