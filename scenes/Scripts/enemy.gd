@@ -39,9 +39,12 @@ func flip():
 	else:
 		speed = abs(speed) * -1
 
+
+
 func _on_area_2d_body_entered(body: Node2D) -> void:
 	if(body.name == "CharacterBody2D"):
 		var y_delta = position.y - body.position.y
+		print(y_delta)
 		if (y_delta > 20):
 			print("Destroy enemy")
 			queue_free()
