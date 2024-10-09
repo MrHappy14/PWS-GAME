@@ -151,6 +151,5 @@ autoplay = "default"
 frame_progress = 0.693561
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(2, 0)
 shape = SubResource("RectangleShape2D_7swib")
 debug_color = Color(6.73831e-07, 0.600105, 0.699397, 0.42)
