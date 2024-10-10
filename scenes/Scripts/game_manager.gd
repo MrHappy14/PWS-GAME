@@ -1,4 +1,5 @@
 extends Node
+
 @onready var points_label: Label = %PointsLabel
 
 var points = 0
