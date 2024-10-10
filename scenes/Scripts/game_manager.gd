@@ -4,6 +4,10 @@ extends Node
 
 var points = 0
 
+var store
+
+var save_store_path = "user://save"
+
 func add_point():
 	points += 1
 	print(points)
