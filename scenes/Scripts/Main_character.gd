@@ -11,16 +11,20 @@ var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
 func jump():
 	velocity.y = JUMP_VELOCITY
 
-func _ready():# Access the root node of the current scene
-	var current_scene = get_tree().root.get_child(0)
+func _ready():
+	# Access the current scene
+	var current_scene = get_tree().current_scene
 	
-	# Check the scene name or set the gravity based on the scene
-	if current_scene.name == "Level 1":
-		gravity = 75
-	elif current_scene.name == "Level 2":
-		gravity = 162
-	elif current_scene.name == "Level 3":
-		gravity = 371
+	# Check if the current scene exists and get its name
+	if current_scene != null:
+		if current_scene.name == "Level 1":
+			gravity = 75
+		elif current_scene.name == "Level 2":
+			gravity = 162
+		elif current_scene.name == "Level 3":
+			gravity = 371
+	else:
+		print("Error: No current scene loaded")
 
 func _physics_process(delta):
 	#Animations
